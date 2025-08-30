@@ -1,0 +1,338 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    /* BODY */
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      font-family: "Segoe UI", arial, sans-serif;
+    }
+
+    /* NAVBAR */
+    .nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #1abc9c;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      justify-content: space-around;
+    }
+
+    .nav img {
+      margin-right: 15px;
+      border-radius: 50%;
+    }
+
+    .nav p {
+      margin-left: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #95f379;
+      text-decoration: underline;
+    }
+    .nav .ig {
+      margin-left: auto;
+    }
+
+    /* HOME */
+    .home {
+      padding: 120px 20px 60px; /* kasih jarak agar tidak ketutup navbar */
+      text-align: center;
+      background: linear-gradient(to right, #1abc9c, #16a085);
+      color: white;
+    }
+
+    .home h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* PROFIL */
+    .profil {
+      padding: 40px 20px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .profil p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+    }
+    .galeri {
+  display: flex;
+  justify-content: center;  /* Biar fotonya sejajar di tengah */
+  gap: 20px;                /* Jarak antar foto */
+  margin: 40px 0;           /* Jarak atas & bawah */
+}
+
+.foto {
+  text-align: center;       /* Nama ada di bawah, rata tengah */
+}
+
+.foto img {
+  width: 150px;             /* Atur ukuran sesuai selera */
+  height: 150px;
+  object-fit: cover;        /* Biar foto tidak ketarik aneh */
+  border-radius: 15px;      /* Sudut membulat */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Efek bayangan */
+}
+
+.foto p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+    /* LAYANAN */
+    .layanan {
+      padding: 60px 20px;
+      background: #f4fdfc;
+    }
+
+    .layanan h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #16a085;
+    }
+
+    .layanan ul {
+      list-style: none;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .layanan details {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 10px 0;
+      padding: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .layanan details:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .layanan summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #1abc9c;
+    }
+
+    /* TESTIMONI */
+    .testimoni {
+      padding: 60px 20px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .testimoni h2 {
+      color: #16a085;
+      margin-bottom: 20px;
+    }
+
+    .testimoni img {
+      border-radius: 20px;
+      margin-bottom: 15px;
+      height: 200px;
+      width: 200px;
+    }
+
+    .testimoni p {
+      font-style: italic;
+      color: #555;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 60px 20px;
+      background: #f4fdfc;
+      text-align: center;
+    }
+    .contact a {
+      color: #050505;
+    }
+
+    .contact h2 {
+      color: #16a085;
+      margin-bottom: 20px;
+    }
+
+    /* FORM PENDAFTARAN */
+    .daftar {
+      padding: 60px 20px;
+      background: #fff;
+    }
+
+    .daftar h2 {
+      text-align: center;
+      color: #16a085;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #f9f9f9;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: #1abc9c;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #16a085;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1abc9c;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+    /* MEDIA QUERY UNTUK HP DENGAN BURGER MENU */
+    @media (max-width: 768px) {
+      /* NAVBAR */
+      .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+      }
+
+     
+      .nav p {
+        display: none;
+      }
+
+     
+      .nav .ig {
+        display: none;
+      }
+
+   
+      .burger {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: white;
+      }
+
+    
+      .nav.active p,
+      .nav.active .ig {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .nav.active {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+  
+      .home h1 {
+        font-size: 1.8rem;
+      }
+
+    
+      .profil p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+    
+      .layanan h2 {
+        font-size: 1.5rem;
+      }
+
+      .layanan details {
+        font-size: 0.95rem;
+      }
+
+     
+      .testimoni img {
+        width: 150px;
+        height: 150px;
+      }
+
+     
+      form {
+        width: 100%;
+        padding: 15px;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        font-size: 0.9rem;
+      }
+
+      form button {
+        width: 100%;
+      }
+
+   
+      .contact p {
+        font-size: 0.9rem;
+      }
+
+    
+      footer {
+        font-size: 0.8rem;
+      }
+    }
